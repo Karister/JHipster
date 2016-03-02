@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+}
+header.top {
+    background-color: #ffc853;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+}
+header.top > p {
+    margin: 0;
+}
+.menu {
+    background-color: #ffba2e;
+    padding: 10px;
+}

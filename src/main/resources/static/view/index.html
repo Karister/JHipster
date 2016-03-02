@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <title>Hello AngularJS</title>
+    <link rel="stylesheet" type="text/css" href="../css/default.css">
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="../js/app.js"></script>
+	
+<!-- 	<script src="../js/uglified/libs.js"></script> -->
+<!-- 	<script src="../js/uglified/all.js"></script> -->
+</head>
+
+<body ng-app="app">
+<div ng-include src="'/view/fragment/header.html'" ></div>
+<div ng-controller="mainCtrl">
+    <div class="menu">
+        <a href="" ng-click="users1()">users1</a> | <a href="" ng-click="users2()">users2</a>
+    </div>
+    <div>
+        <table ng-if="users">
+            <thead>
+                <tr>
+                    <th>NAME</th>
+                    <th>AGE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="u in users">
+                    <td>{{u.name}}</td>
+                    <td>{{u.age}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
