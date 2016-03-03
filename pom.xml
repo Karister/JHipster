@@ -54,7 +54,7 @@
 		        <version>0.0.27</version>
 		 
 		 		<configuration>
-                    <workingDirectory>${basedir}/nodejs</workingDirectory>
+                    <workingDirectory>nodejs</workingDirectory>
                 </configuration>
 		 
 		        <executions>
