@@ -1,11 +1,12 @@
 /**
 !/src
 !/src/**
-!/nodejs
-!/nodejs/**
-src/main/resources/static/bower_components
-src/main/resources/static/js/uglified
+!/nodejs/.bowerrc
+!/nodejs/bower.json
+!/nodejs/Gruntfile.js
+!/nodejs/package.json
+/src/main/resources/static/bower_components
+/src/main/resources/static/js/uglified
 !.gitignore
-!.bowerrc
 !pom.xml
 
