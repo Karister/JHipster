@@ -16,28 +16,8 @@
 
 <body ng-app="app">
 <top-header text="HELLO!!!"></top-header>
-<div ng-header></div>
+<div ng-view></div>
 
-<div ng-controller="mainCtrl">
-    <div class="menu">
-        <a href="" ng-click="users1()">users1</a> | <a href="" ng-click="users2()">users2</a>
-    </div>
-    <div>
-        <table ng-if="users">
-            <thead>
-                <tr>
-                    <th>NAME</th>
-                    <th>AGE</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr ng-repeat="u in users">
-                    <td>{{u.name}}</td>
-                    <td>{{u.age}}</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</div>
+
 </body>
 </html>

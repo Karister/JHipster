@@ -4,7 +4,7 @@ angular.module('app.controllers', []).controller('mainCtrl', function($scope, ma
         mainService.users1().success(function(data) {
             $scope.users = data;
         })
-    }
+    },
 
     $scope.users2 = function() {
         mainService.users2().success(function(data) {

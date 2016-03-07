@@ -10,7 +10,9 @@ public class MVCConfig extends WebMvcConfigurerAdapter {
 
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/index").setViewName("forward:/view/index.html");
+        registry.addViewController("/index").setViewName("forward:/views/index.html");
+        registry.addViewController("/").setViewName("forward:/views/index.html");
+        registry.addViewController("/home").setViewName("forward:/views/pages/home.html");
     }
     
     @Override
@@ -21,7 +23,7 @@ public class MVCConfig extends WebMvcConfigurerAdapter {
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/view/**").addResourceLocations("classpath:/static/view/");
+        registry.addResourceHandler("/views/**").addResourceLocations("classpath:/static/views/");
         registry.addResourceHandler("/css/**").addResourceLocations("classpath:/static/css/");
         registry.addResourceHandler("/js/**").addResourceLocations("classpath:/static/js/");
         registry.addResourceHandler("/bower_components/**").addResourceLocations("classpath:/static/bower_components/");

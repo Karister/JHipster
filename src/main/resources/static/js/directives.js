@@ -4,6 +4,6 @@ angular.module('app.directives', []).directive('topHeader', function() {
         scope: {
             text: '@'
         },
-        templateUrl: '/view/fragment/header.html'
+        templateUrl: '/views/fragments/header.html'
     };
 });
