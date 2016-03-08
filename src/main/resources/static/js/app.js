@@ -10,5 +10,10 @@ angular.module('app', ['ui.router', 'app.services', 'app.controllers', 'app.dire
                 url: "/about",
                 templateUrl: "/views/pages/about.html"
             })
-    });
-
+    })
+    .config(["$locationProvider", function($locationProvider) {
+        $locationProvider.html5Mode({
+            enabled: true,
+            requireBase: false
+        });
+    }]);
