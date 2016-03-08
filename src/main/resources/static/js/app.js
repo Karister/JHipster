@@ -1,11 +1,14 @@
-angular.module('app', ['ngRoute', 'app.services', 'app.controllers', 'app.directives']).config(function($routeProvider) {
-    $routeProvider
-        .when('/index', {
-            templateUrl : '/home',
-            controller  : 'mainCtrl'
-        })
-        .when('/', {
-            templateUrl : '/home',
-            controller  : 'mainCtrl'
+angular.module('app', ['ui.router', 'app.services', 'app.controllers', 'app.directives'])
+    .config(function ($stateProvider, $urlRouterProvider) {
+        $urlRouterProvider.otherwise("/");
+        $stateProvider
+            .state('index', {
+                url: "/",
+                templateUrl: "/home"
+            })
+            .state('about', {
+                url: "/about",
+                templateUrl: "/about"
+            })
     });
-});
+
