@@ -4,11 +4,11 @@ angular.module('app', ['ui.router', 'app.services', 'app.controllers', 'app.dire
         $stateProvider
             .state('index', {
                 url: "/",
-                templateUrl: "/home"
+                templateUrl: "/views/pages/home.html"
             })
             .state('about', {
                 url: "/about",
-                templateUrl: "/about"
+                templateUrl: "/views/pages/about.html"
             })
     });
 
