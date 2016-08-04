@@ -1,8 +1,5 @@
 package com.example.data;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-
 public class UserData {
 	
     private String name;
