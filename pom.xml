@@ -9,7 +9,7 @@
 	<packaging>jar</packaging>
 
 	<name>demo</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Demo project for Spring Boot Grunt and Bower</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -24,11 +24,6 @@
 	</properties>
 
 	<dependencies>
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<version>1.16.6</version>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -105,6 +100,5 @@
 
 		</plugins>
 	</build>
-	
 
 </project>
