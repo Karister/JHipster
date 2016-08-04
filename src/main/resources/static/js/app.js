@@ -1,5 +1,5 @@
 angular.module('app', ['ui.router', 'app.services', 'app.controllers', 'app.directives'])
-    .config(function ($stateProvider, $urlRouterProvider) {
+    .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise("/");
         $stateProvider
             .state('index', {
@@ -10,7 +10,7 @@ angular.module('app', ['ui.router', 'app.services', 'app.controllers', 'app.dire
                 url: "/about",
                 templateUrl: "/views/pages/about.html"
             })
-    })
+    }])
     .config(["$locationProvider", function($locationProvider) {
         $locationProvider.html5Mode({
             enabled: true,
