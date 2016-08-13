@@ -1,6 +1,6 @@
-package com.example.service;
+package pl.arczynskiadam.service;
 
-import com.example.data.UserData;
+import pl.arczynskiadam.data.UserData;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

@@ -1,7 +1,7 @@
-package com.example.controller;
+package pl.arczynskiadam.controller;
 
-import com.example.data.UserData;
-import com.example.service.MockService;
+import pl.arczynskiadam.data.UserData;
+import pl.arczynskiadam.service.MockService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

@@ -1,4 +1,4 @@
-package com.example.data;
+package pl.arczynskiadam.data;
 
 public class UserData {
 	
