@@ -16,13 +16,18 @@ module.exports = function(grunt) {
 				]
 	          }
 	        }
-	      }
+	      },
+
+		clean: {
+			build: {
+				src: [
+					'../src/main/resources/static/js/uglified',
+					'../src/main/resources/static/bower_components'
+				]
+			}
+		}
 	});
-	
-	// Load the plugin that provides the "uglify" task.
+
+	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
-
-	// Default task(s).
-	grunt.registerTask('default', [ 'uglify' ]);
-
 };
