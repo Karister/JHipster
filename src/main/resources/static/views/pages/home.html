@@ -1,26 +1,29 @@
-<div ng-controller="mainCtrl">
+<div>
     <top-header text="Welcome to {{pageTitle}}"></top-header>
     <p>
         Lorem ipsum dolor sit amet, libris vocibus est et, ex quo meliore oporteat singulis, epicurei consulatu ei vel. Vis cu cibo vivendum adipiscing, pri ei odio denique principes. Ei saepe iriure aperiri his, in dicam molestie vis, modo mentitum quaestio ex sit. Qui an elit splendide persequeris, at docendi epicuri recteque nam.
     </p>
-    <p>
-        <button ng-click="users1()" type="button" class="btn btn-sm btn-primary">Users 1</button>
-        <button ng-click="users2()" type="button" class="btn btn-sm btn-primary">Users 2</button>
-    </p>
-    <p ng-if="users">
-        <table class="table table-striped">
-            <thead>
-            <tr>
-                <th>NAME</th>
-                <th>AGE</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr ng-repeat="u in users">
-                <td>{{u.name}}</td>
-                <td>{{u.age}}</td>
-            </tr>
-            </tbody>
-        </table>
-    </p>
+    <hr class="gradient-separator"/>
+    <div ng-controller="usersCtrl">
+        <p>
+            <button ng-click="users1()" type="button" class="btn btn-sm btn-primary">Users 1</button>
+            <button ng-click="users2()" type="button" class="btn btn-sm btn-primary">Users 2</button>
+        </p>
+        <div ng-if="users">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>NAME</th>
+                    <th>AGE</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="u in users">
+                    <td>{{u.name}}</td>
+                    <td>{{u.age}}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>

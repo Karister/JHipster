@@ -2,7 +2,7 @@ angular.module('app', ['ui.router', 'app.services', 'app.controllers', 'app.dire
     .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise("/");
         $stateProvider
-            .state('index', {
+            .state('home', {
                 url: "/",
                 templateUrl: "/views/pages/home.html",
                 controller: "homePageCtrl"
