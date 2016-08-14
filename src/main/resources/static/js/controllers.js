@@ -12,3 +12,9 @@ angular.module('app.controllers', []).controller('mainCtrl', ['$scope', 'mainSer
         })
     }
 }])
+angular.module('app.controllers').controller('homePageCtrl', ['$scope', function($scope) {
+    $scope.pageTitle = 'Home';
+}])
+angular.module('app.controllers').controller('aboutPageCtrl', ['$scope', function($scope) {
+    $scope.pageTitle = 'About';
+}])

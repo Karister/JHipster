@@ -4,11 +4,13 @@ angular.module('app', ['ui.router', 'app.services', 'app.controllers', 'app.dire
         $stateProvider
             .state('index', {
                 url: "/",
-                templateUrl: "/views/pages/home.html"
+                templateUrl: "/views/pages/home.html",
+                controller: "homePageCtrl"
             })
             .state('about', {
                 url: "/about",
-                templateUrl: "/views/pages/about.html"
+                templateUrl: "/views/pages/about.html",
+                controller: "aboutPageCtrl"
             })
     }])
     .config(["$locationProvider", function($locationProvider) {
