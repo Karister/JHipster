@@ -9,4 +9,5 @@
 /src/main/resources/static/js/uglified
 !.gitignore
 !pom.xml
+!README.md
 
