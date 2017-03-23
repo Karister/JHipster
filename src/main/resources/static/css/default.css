@@ -7,3 +7,6 @@ hr.gradient-separator {
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
 }
+table.even-cols {
+    table-layout: fixed;
+}
