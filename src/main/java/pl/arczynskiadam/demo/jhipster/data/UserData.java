@@ -1,4 +1,4 @@
-package pl.arczynskiadam.data;
+package pl.arczynskiadam.demo.jhipster.data;
 
 public class UserData {
 	

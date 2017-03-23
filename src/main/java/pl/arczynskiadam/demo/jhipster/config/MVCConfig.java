@@ -1,4 +1,4 @@
-package pl.arczynskiadam.config;
+package pl.arczynskiadam.demo.jhipster.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.*;

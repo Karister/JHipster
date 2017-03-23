@@ -1,6 +1,6 @@
-package pl.arczynskiadam.service;
+package pl.arczynskiadam.demo.jhipster.service;
 
-import pl.arczynskiadam.data.UserData;
+import pl.arczynskiadam.demo.jhipster.data.UserData;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

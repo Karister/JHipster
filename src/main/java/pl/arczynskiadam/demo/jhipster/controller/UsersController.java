@@ -1,7 +1,7 @@
-package pl.arczynskiadam.controller;
+package pl.arczynskiadam.demo.jhipster.controller;
 
-import pl.arczynskiadam.data.UserData;
-import pl.arczynskiadam.service.UsersMockService;
+import pl.arczynskiadam.demo.jhipster.data.UserData;
+import pl.arczynskiadam.demo.jhipster.service.UsersMockService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
