@@ -9,19 +9,20 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
-@RestController()
-public class PagesController {
+@RestController
+@RequestMapping("/users")
+public class UsersController {
     
     @Autowired
     UsersMockService usersService;
     
-    @RequestMapping("users1")
-    public List<UserData> get1User(HttpServletRequest request) {
-        return usersService.getUsers1();
+    @RequestMapping("/underage")
+    public List<UserData> underageUsers(HttpServletRequest request) {
+        return usersService.getUnderageUsers();
     }
 
-    @RequestMapping("users2")
-    public List<UserData> get2Users(HttpServletRequest request) {
-        return usersService.getUsers2();
+    @RequestMapping("/adult")
+    public List<UserData> adultUsers(HttpServletRequest request) {
+        return usersService.getAdultUsers();
     }
 }

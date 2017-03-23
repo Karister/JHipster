@@ -10,19 +10,19 @@ import static java.util.stream.Collectors.toList;
 
 @Component
 public class UsersMockService {
-    public List<UserData> getUsers1() {
+    public List<UserData> getUnderageUsers() {
         return Stream.of(
                 new UserData("User 1", 15),
-                new UserData("User 2", 22),
-                new UserData("User 3", 60)
+                new UserData("User 2", 8),
+                new UserData("User 3", 17)
         ).collect(toList());
     }
     
-    public List<UserData> getUsers2() {
+    public List<UserData> getAdultUsers() {
         return Stream.of(
                 new UserData("User 4", 19),
                 new UserData("User 5", 23),
-                new UserData("User 6", 17),
+                new UserData("User 6", 18),
                 new UserData("User 7", 49),
                 new UserData("User 8", 38),
                 new UserData("User 9", 20),

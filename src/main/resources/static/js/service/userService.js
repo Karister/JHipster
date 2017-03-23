@@ -1,10 +1,10 @@
 angular.module('app.services', []).service('userService', ['$http', function($http) {
 
-    this.users1 = function() {
-        return $http.get('/users1')
+    this.underageUsers = function() {
+        return $http.get('/users/underage')
     }
 
-    this.users2 = function() {
-        return $http.get('/users2')
+    this.adultUsers = function() {
+        return $http.get('/users/adult')
     }
 }])
